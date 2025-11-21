@@ -1,0 +1,50 @@
+<h2>{{title}}</h2>
+
+{{#if error}}
+  <div style="color: red; margin-bottom: 10px;">{{error}}</div>
+{{/if}}
+
+<form method="POST" action="/listings/create">
+  <label>Property ID:</label>
+  <input type="text" name="id" required />
+  <br /><br />
+  <label>Property Name:</label>
+  <input type="text" name="NAME" required />
+  <br /><br />
+  <label>Hosted by (Name):</label>
+  <input type="text" name="host name" />
+  <br /><br />
+  <label>Host Status:</label>
+  <select name="host_identity_verified">
+    <option value="unconfirmed">unconfirmed</option>
+    <option value="verified">verified</option>
+  </select>
+  <br /><br />
+  <label>Location</label>
+  <input type="text" name="neighbourhood" />
+  <br /><br />
+  <label>Country</label>
+  <input type="text" name="country" />
+  <br /><br />
+  <label>Price ($):</label>
+  <input type="number" name="price" required />
+  <br /><br />
+  <label>Room Type:</label>
+  <select name="room_type">
+    <option value="Private room">Private room</option>
+    <option value="Entire home/apt">Entire home/apt</option>
+    <option value="Shared room">Shared room</option>
+    <option value="Hotel room">Hotel room</option>
+  </select>
+  <br /><br />
+  <label>Number of Reviews:</label>
+  <input type="number" name="number of reviews" value="0" />
+  <br /><br />
+  <label>Rate (1-5):</label>
+  <input type="number" name="review rate number" min="1" max="5" value="5" />
+  <br /><br />
+  <label>House Rules:</label>
+  <textarea name="house_rules" rows="4"></textarea>
+  <br /><br />
+  <input type="submit" value="Add Listing" />
+</form>

@@ -1,0 +1,119 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header,
+footer {
+  background-color: #bf3678;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 10%;
+}
+
+a{
+  color: white;
+}
+
+main {
+  background-color: white;
+  min-height: 400px;
+  padding: 20px;
+  margin: 0 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  font-size: 0.9em;
+  margin: 0 10%;
+}
+
+.highlight-row {
+  background-color: #ffaeae;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+  width: 300px;
+  margin-top: 10px;
+}
+
+form input[type="submit"]{
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #c34682;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+
+.action-edit,
+.action-delete {
+  display: inline-block;
+  margin-right: 5px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+table td {
+  max-width: 300px;
+}
+
+.action-edit {
+  color: #ff9800;
+}
+
+.action-delete {
+  color: #dc3545;
+}
+
+/* pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #bf3678;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.page-link:hover {
+  background-color: #a02b63;
+}
+
+.page-info {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+}
