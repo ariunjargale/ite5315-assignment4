@@ -69,7 +69,9 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: "Internal Server Error" });
 });
 
-// Start server
-app.listen(config.port, () => {
-  console.log(`Server running on port ${config.port}`);
-});
+// // Start server
+// app.listen(config.port, () => {
+//   console.log(`Server running on port ${config.port}`);
+// });
+
+module.exports = app;
